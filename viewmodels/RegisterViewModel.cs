@@ -93,9 +93,7 @@ namespace MusicCatalogue.viewmodels
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void RaisePropertyChanged(string propertyName)
-        {
-            //PropertyChangedEventHandler handler = PropertyChanged;
-        
+        {      
             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));

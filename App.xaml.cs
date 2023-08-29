@@ -24,9 +24,7 @@ namespace MusicCatalogue
             _context = new CatalogueContext();
 
             var services = new ServiceCollection();
-            //TODO why add singleton?
             services.AddSingleton(_context);
-            //TODO AddTransient? AddSingleton?
             services.AddScoped<IPublisherRepository, PublisherRepository>();
             services.AddScoped<IAlbumRepository, AlbumRepository>();
             services.AddScoped<IArtistRepository, ArtistRepository>();

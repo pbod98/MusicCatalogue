@@ -17,7 +17,6 @@ namespace MusicCatalogue.models.repositories
         public void Add(Album album)
         {
             _context.Albums.Add(album);
-            //_context.Entry(album).Collection(a => a.Artists).Load();
             _context.SaveChanges();
         }
 

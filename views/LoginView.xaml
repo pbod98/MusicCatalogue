@@ -15,13 +15,14 @@
         <TextBox HorizontalAlignment="Left" Margin="208,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="29"
                  Background="Transparent" Foreground="AliceBlue" Text="{Binding Password}"/>
         <Label Content="Sign in" HorizontalAlignment="Left" Margin="228,28,0,0" VerticalAlignment="Top" Width="136" FontSize="40" Foreground="AliceBlue"/>
-    <Button Content="Sign in" HorizontalAlignment="Left" Margin="228,247,0,0" VerticalAlignment="Top" Width="136" Height="34"
+        <Button Content="Sign in" HorizontalAlignment="Left" Margin="228,247,0,0" VerticalAlignment="Top" Width="136" Height="34"
                 Background="LightSalmon" Command="{Binding SignInCommand}"/>
 
-    <Button Content="Don't have an account? Register here" Margin="0,302,0,0" VerticalAlignment="Top" 
+        <Button Content="Don't have an account? Register here" Margin="0,302,0,0" VerticalAlignment="Top" 
                 Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Foreground="#E43F5A" Command="{ Binding RegisterCommand }" IsEnabled="{Binding CanSignIn}"/>
-    <Label Content="Login" HorizontalAlignment="Left" Margin="204,137,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="204,137,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="204,197,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+
 
     </Grid>
 </Window>

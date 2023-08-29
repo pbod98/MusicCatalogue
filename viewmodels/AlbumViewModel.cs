@@ -131,8 +131,6 @@ namespace MusicCatalogue.viewmodels
             };
 
             _albumRepository.Add(addedAlbum);
-            //InitializeDataGrid();   //UpdateDataGrid(addedAlbum)
-
         }
         public void InitializeDataGrid()
         {
